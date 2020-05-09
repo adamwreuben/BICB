@@ -4,13 +4,20 @@
       <div style="display: block" class="chart_container">
         <canvas baseChart [datasets]="barChartData"
          [labels]="barChartLabels"
+         (click)="randomize()"
           [options]="barChartOptions"
           [legend]="barChartLegend"
           [chartType]="barChartType" 
           (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
+          (chartClick)="chartClicked($event)">
+        
+      </canvas>
+      <!-- <button mat-button mat-raised-button class="icon_container_btn" >
+        <mat-icon>sync</mat-icon>
+      </button> -->
+          
       </div>
-      <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+      
       
     </div>
   </div>

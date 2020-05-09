@@ -10,6 +10,7 @@ import { ChartsModule } from 'ng2-charts';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 
@@ -25,7 +26,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ChartsModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
