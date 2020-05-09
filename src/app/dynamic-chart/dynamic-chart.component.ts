@@ -16,12 +16,15 @@ export class DynamicChartComponent implements OnInit {
     scales: { xAxes: [{}], yAxes: [{}] },
   };
   public barChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April', 'May'];
+  public lineChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April', 'May'];
   public barChartType: ChartType = 'line';
   public barChartLegend = false;
+  public lineChartLegend = false;
+  
 
   public barChartData: ChartDataSets[] = [
     { data: [61, 62, 62, 52], label: 'Clients' },
-    { data: [759 , 1346, 1640, 19], label: 'G. Profit (K TZS)' }
+    { data: [759 , 1346, 1640, 1148], label: 'G. Profit (K TZS)' }
   ];
 
   constructor() { }
