@@ -1,0 +1,13 @@
+.charts_view{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+.mat-toolbar{
+    background-color: var(--purple);
+    color: var(--wlight);
+}
+.menu-hambuger-icon{
+right: 50px;
+position: absolute;
+}
