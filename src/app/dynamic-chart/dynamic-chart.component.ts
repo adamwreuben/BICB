@@ -16,10 +16,8 @@ export class DynamicChartComponent implements OnInit {
     scales: { xAxes: [{}], yAxes: [{}] },
   };
   public barChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April', 'May'];
-  public lineChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April', 'May'];
   public barChartType: ChartType = 'line';
   public barChartLegend = false;
-  public lineChartLegend = false;
   
 
   public barChartData: ChartDataSets[] = [

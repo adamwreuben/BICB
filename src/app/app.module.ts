@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { LineGraphComponent } from './line-graph/line-graph.component';
 
 
 
@@ -19,7 +18,6 @@ import { LineGraphComponent } from './line-graph/line-graph.component';
   declarations: [
     AppComponent,
     DynamicChartComponent,
-    LineGraphComponent
   ],
   imports: [
     BrowserModule,
