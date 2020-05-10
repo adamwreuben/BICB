@@ -12,7 +12,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { LineChartComponent } from './line-chart/line-chart.component';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -31,7 +30,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatIconModule,
     MatToolbarModule,
     MatSlideToggleModule,
-    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
