@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { HomeGridComponent } from './home-grid/home-grid.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -19,7 +21,8 @@ import { LineChartComponent } from './line-chart/line-chart.component';
   declarations: [
     AppComponent,
     DynamicChartComponent,
-    LineChartComponent
+    LineChartComponent,
+    HomeGridComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { LineChartComponent } from './line-chart/line-chart.component';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

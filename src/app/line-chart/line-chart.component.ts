@@ -13,13 +13,13 @@ export class LineChartComponent implements OnInit {
     // We use these empty structures as placeholders for dynamic theming.
     scales: { xAxes: [{}], yAxes: [{}] },
   };
-  public barChartLabels: Label[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-  public barChartType: ChartType = 'bar';
-  public barChartLegend = true;
+  public barChartLabels: Label[] = ['Jan', 'Feb', 'Mar', 'Apr'];
+  public barChartType: ChartType = 'line';
+  public barChartLegend = false;
 
   public barChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+    { data: [600, 800, 1200, 1800], label: 'Target G. Profit(K TZS)' },
+    { data: [759, 1_346, 1_640, 1_148], label: 'G. Profit (K TZS)' }
   ];
 
   constructor() { }
@@ -34,9 +34,5 @@ export class LineChartComponent implements OnInit {
 
   public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
     console.log(event, active);
-  }
-
-  public randomize(): void {
-    this.barChartType = this.barChartType === 'line' ? 'bar' : 'line';
   }
 }
