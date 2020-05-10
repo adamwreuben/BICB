@@ -15,13 +15,13 @@ export class DynamicChartComponent implements OnInit {
     // We use these empty structures as placeholders for dynamic theming.
     scales: { xAxes: [{}], yAxes: [{}] },
   };
-  public barChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April'];
+  public barChartLabels: Label[] = ['Jan', 'Feb', 'March', 'April', 'May'];
   public barChartType: ChartType = 'line';
   public barChartLegend = false;
   
 
   public barChartData: ChartDataSets[] = [
-    { data: [70, 100, 70, 80], label: 'Targeted Active Clients' },
+    { data: [70, 100, 70, 80, 80], label: 'Targeted Active Clients' },
     { data: [61 , 62, 62, 52], label: 'Active Clients' }
   ];
 
