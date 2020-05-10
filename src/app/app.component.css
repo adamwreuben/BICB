@@ -5,7 +5,7 @@
                 0 2px 4px var(--b-shadow);
 }
 .mat-toolbar{
-    background-color: var(--mid);
+    background-color: var(--dark);
     color: var(--wlight);
     position: sticky;
     top: 0;
@@ -31,7 +31,7 @@ main{
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--mid);
+    background-color: var(--dark)
 }
 .charts{
     height: auto;
