@@ -1,4 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --purple: #7d36ba;
+  --dark: #160f30;
+  --mid: #241663;
+  --wdark: #000000;
+  --wlight: #ffffff;
+  --b-shadow: rgba(0, 0, 0, 0.644);
+  --w-shadow: rgba(0, 0, 0, 0.644);
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  background-color: var(--wdark);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.icon_container_btn{
+  border-radius: 50px;
+  position: relative;
+  top: 0;
+  background-color: var(--purple);
+  color: var(--wlight);
+}
+
+
