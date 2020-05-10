@@ -19,7 +19,7 @@ import { LineChartComponent } from './line-chart/line-chart.component';
   declarations: [
     AppComponent,
     DynamicChartComponent,
-    LineChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,

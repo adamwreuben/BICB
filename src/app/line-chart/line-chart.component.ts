@@ -3,11 +3,11 @@ import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-dynamic-chart',
-  templateUrl: './dynamic-chart.component.html',
-  styleUrls: ['./dynamic-chart.component.scss']
+  selector: 'app-line-chart',
+  templateUrl: './line-chart.component.html',
+  styleUrls: ['./line-chart.component.css']
 })
-export class DynamicChartComponent implements OnInit {
+export class LineChartComponent implements OnInit {
   public barChartOptions: ChartOptions = {
     responsive: true,
     // We use these empty structures as placeholders for dynamic theming.
@@ -37,6 +37,6 @@ export class DynamicChartComponent implements OnInit {
   }
 
   public randomize(): void {
-    this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
+    this.barChartType = this.barChartType === 'line' ? 'bar' : 'line';
   }
 }
