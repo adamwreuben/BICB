@@ -19,14 +19,21 @@
       <li>Management</li>
     </ul>
   </div>
-  <div class="charts">
 
-  <div class="charts_view">
-    <app-dynamic-chart></app-dynamic-chart>
+  <div class="charts">
+    <div class="charts_view">
+      <app-dynamic-chart></app-dynamic-chart>
+    </div>
+    <div class="charts_view">
+      <app-line-chart></app-line-chart>
+    </div>
   </div>
-  <div class="charts_view">
-    <app-line-chart></app-line-chart>
-  </div>
-  </div>
+  <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+
   
 </main>
