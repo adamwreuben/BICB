@@ -9,6 +9,7 @@
     color: var(--wlight);
     position: sticky;
     top: 0;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
 }
@@ -30,8 +31,10 @@ main{
     z-index: 1;
     position: fixed;
     left: 0;
-    top: 0;
-    background-color: var(--dark)
+    color: var(--wlight);
+    top: 60px;
+    background-color: var(--dark);
+    
 }
 .charts{
     height: auto;
