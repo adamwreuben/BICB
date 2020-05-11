@@ -1,0 +1,16 @@
+.charts_view {
+  width: 400px;
+  height: auto;
+}
+
+.charts {
+  height: 300px;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 5%;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0 -2px 2px var(--b-shadow),
+    0 2px 4px var(--w-shadow);
+}

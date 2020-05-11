@@ -1,33 +1,36 @@
-<!-- <router-outlet></router-outlet> -->
-<mat-toolbar>
-<mat-toolbar-row>
-  <span>BICB | Microfinance</span>
-  <!-- <mat-slide-toggle class="example-margin">
-    Theme
-  </mat-slide-toggle> -->
-  <mat-icon class="menu-hambuger-icon" click>menu</mat-icon>  
-</mat-toolbar-row>
-</mat-toolbar>
 
-<main>
-  <div class="side_menu">
-    <div class="options"><span>Clients Desk</span></div>
-    <div class="options"><span>Operations</span></div>
-    <div class="options"><span>Treasury</span></div>
-    <div class="options"><span>Management</span></div>
-    <div class="options"><span>Settings</span></div>
-    <div class="options"><span>About</span></div>
-  </div>
-
-<div class="charts">
-  <div class="charts_view">
-    <app-dynamic-chart></app-dynamic-chart>
-  </div>
-  <div class="charts_view">
-    <app-line-chart></app-line-chart>
-  </div>
-</div>
-  
 
   
-</main>
+
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="service-desk">Clients Desk</a>
+      <a mat-list-item routerLink="operations">Operations</a>
+      <a mat-list-item routerLink="treasury">Treasury</a>
+      <a mat-list-item routerLink="management">Management</a>
+      <a mat-list-item href="#">Settings</a>
+      <a mat-list-item href="#">About</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>BICB Microfinance</span>
+    </mat-toolbar>
+    <!-- <ng-content></ng-content> -->
+    <router-outlet></router-outlet>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
