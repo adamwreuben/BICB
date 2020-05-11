@@ -1,21 +1,53 @@
 <mat-tab-group>
-  <mat-tab label="Clients">
+  <mat-tab label="Register">
+    <mat-form-field clientType>
+      <mat-label>Client Type</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let ctype of foods" [value]="ctype.value">
+          {{ctype.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-card cards></mat-card>
+  </mat-tab>
+  <mat-tab label="Second">
+    
+  </mat-tab>
+
+  
+  <mat-tab label="Summary">
     <mat-list>
-      <div mat-subheader>Folders</div>
-      <mat-list-item *ngFor="let folder of folders">
-        <mat-icon mat-list-icon>folder</mat-icon>
-        <div mat-line>{{folder.name}}</div>
-        <div mat-line> {{folder.updated | date}} </div>
+      <div mat-subheader>Active</div>
+      <mat-list-item *ngFor="let aclient of activeClients">
+        <mat-icon class="active_clients_icon" mat-list-icon>person</mat-icon>
+        <div mat-line>{{aclient.name}}</div>
+        <div mat-line> {{aclient.updated | date}} </div>
+        <mat-icon clients_actions_icon>comment</mat-icon>
       </mat-list-item>
       <mat-divider></mat-divider>
-      <div mat-subheader>Notes</div>
-      <mat-list-item *ngFor="let note of notes">
-        <mat-icon mat-list-icon>note</mat-icon>
-        <div mat-line>{{note.name}}</div>
-        <div mat-line> {{note.updated | date}} </div>
+
+
+      <div mat-subheader>Inactive</div>
+      <mat-list-item *ngFor="let iclient of inactivesClients">
+        <mat-icon class="inaactive_clients_icon" mat-list-icon>person</mat-icon>
+        <div mat-line>{{iclient.name}}</div>
+        <div mat-line> {{iclient.updated | date}} </div>
+        <mat-icon clients_actions_icon>comment</mat-icon>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+      <div mat-subheader>Defaults</div>
+      <mat-list-item *ngFor="let dclient of defaultsClients">
+        <mat-icon class="defaults_clients_icon" mat-list-icon>person</mat-icon>
+        <div mat-line>{{dclient.name}}</div>
+        <div mat-line> {{dclient.updated | date}} </div>
+        <mat-icon clients_actions_icon>comment</mat-icon>
+
+
       </mat-list-item>
     </mat-list>
   </mat-tab>
-  <mat-tab label="Second"> Content 2 </mat-tab>
-  <mat-tab label="Third"> Content 3 </mat-tab>
 </mat-tab-group>
+
+

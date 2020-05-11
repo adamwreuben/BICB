@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 export interface Section {
   name: string;
   updated: Date;
+  
+}
+interface Food {
+  value: string;
+  viewValue: string;
 }
 @Component({
   selector: 'app-service-desk',
@@ -9,28 +14,53 @@ export interface Section {
   styleUrls: ['./service-desk.component.css']
 })
 export class ServiceDeskComponent implements OnInit {
-  folders: Section[] = [
+  foods: Food[] = [
+    { value: 'new-c', viewValue: 'New Client' },
+    { value: 'repeating-c', viewValue: 'Repeating Client' },
+    { value: 'special-c', viewValue: 'Special Client' }
+  ];
+  
+  activeClients: Section[] = [
     {
-      name: 'Photos',
-      updated: new Date('1/1/16'),
+      name: 'Lauti A. Njeza',
+      updated: new Date('3/20/20'),
     },
     {
-      name: 'Recipes',
-      updated: new Date('1/17/16'),
+      name: 'Dorah Joshua Kabigi',
+      updated: new Date('3/17/20'),
     },
     {
-      name: 'Work',
-      updated: new Date('1/28/16'),
+      name: 'Monika Juma Kyando',
+      updated: new Date('4/3/20'),
+    },
+    {
+      name: 'Rose Wilson Mgonela',
+      updated: new Date('5/7/20'),
     }
   ];
-  notes: Section[] = [
+  inactivesClients: Section[] = [
     {
-      name: 'Vacation Itinerary',
-      updated: new Date('2/20/16'),
+      name: 'Tussa Molis Langila',
+      updated: new Date('11/25/19'),
     },
     {
-      name: 'Kitchen Remodel',
-      updated: new Date('1/18/16'),
+      name: 'Lydia Daniel Mwambosa',
+      updated: new Date('12/3/19'),
+    },
+    {
+      name: 'Naomi Fredy Mbembela',
+      updated: new Date('1/19/20'),
+    }
+  ];
+  
+  defaultsClients: Section[] = [
+    {
+      name: 'Sarafina Emmanuel Mwakajila',
+      updated: new Date('4/9/20'),
+    },
+    {
+      name: 'Witness Joseph Mkembo',
+      updated: new Date('4/9/20'),
     }
   ];
   constructor() { }

@@ -17,4 +17,8 @@
   z-index: 5;
 }
 
+[userIcon]{
+  position: absolute;
+  right: 30px;
+}
 

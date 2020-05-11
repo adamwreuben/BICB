@@ -17,8 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
-
-
+ import { MatSelectModule } from '@angular/material/select';
 
 
 
@@ -40,6 +39,7 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatSlideToggleModule,
     LayoutModule,
+    MatSelectModule,
     MatSidenavModule,
     MatListModule,
     MatTabsModule,
