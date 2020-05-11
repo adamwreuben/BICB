@@ -1,15 +1,21 @@
 <main>
-
-
-  <div class="charts">
-    <div class="charts_view">
-      <app-dynamic-chart></app-dynamic-chart>
-    </div>
-    <div class="charts_view">
-      <app-line-chart></app-line-chart>
-    </div>
-  </div>
-
-
-
+    <!-- <mat-toolbar color="primary">Menu</mat-toolbar> -->
+    <mat-tab-group>
+      <mat-tab label="trends">
+        <mat-card>
+          <div class="charts">
+            <div class="charts_view">
+              <app-dynamic-chart></app-dynamic-chart>
+            </div>
+            <div class="charts_view">
+              <app-line-chart></app-line-chart>
+            </div>
+          </div>
+        </mat-card>
+        
+      </mat-tab>
+      <mat-tab label="Second"> Content 2 </mat-tab>
+      <mat-tab label="Third"> Content 3 </mat-tab>
+    </mat-tab-group>
+  
 </main>

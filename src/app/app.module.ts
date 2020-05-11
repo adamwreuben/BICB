@@ -15,6 +15,8 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -39,7 +41,10 @@ import { MatListModule } from '@angular/material/list';
     MatSlideToggleModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
