@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DynamicChartComponent } from './dynamic-chart/dynamic-chart.component';
+import { ManagementComponent } from './management/management.component';
+import { OperationsComponent } from './operations/operations.component';
+import { ServiceDeskComponent } from './service-desk/service-desk.component';
+import { TrasuryComponent } from './trasury/trasury.component';
 
 
 const routes: Routes = [
-  {path: 'dynamic-chart', component:DynamicChartComponent},
-  {path: '**', component:DynamicChartComponent}
+  { path: 'management', component: ManagementComponent},
+  { path: 'operations', component: OperationsComponent},
+  { path: 'service-desk', component: ServiceDeskComponent},
+  { path: 'treasury', component: TrasuryComponent}
 ];
 
 @NgModule({
@@ -13,3 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [ManagementComponent, OperationsComponent, ServiceDeskComponent, TrasuryComponent]

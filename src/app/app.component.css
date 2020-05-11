@@ -1,45 +1,24 @@
-.charts_view{
-    width: 400px;
-    height: auto;
-    box-shadow: 0 -2px 2px var(--w-shadow),
-                0 2px 4px var(--b-shadow);
-}
-.mat-toolbar{
-    background-color: var(--dark);
-    color: var(--wlight);
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-}
-.mat-toolbar-row > span{
-    position: absolute;
-    right: 30px;
-}
-.menu-hambuger-icon{
-position: absolute;
-left: 100px;
+.sidenav-container {
+  height: 100%;
 }
 
-main{
-    padding-left: 250px;
+.sidenav {
+  width: 200px;
 }
-.side_menu{
-    height: 100%;
-    width: 250px;
-    z-index: 1;
-    position: fixed;
-    left: 0;
-    color: var(--wlight);
-    top: 60px;
-    background-color: var(--dark);
-    
+
+/* .sidenav .mat-toolbar {
+  
+} */
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  color: white;
+  z-index: 5;
 }
-.charts{
-    height: auto;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
+
+[userIcon]{
+  position: absolute;
+  right: 30px;
 }
+

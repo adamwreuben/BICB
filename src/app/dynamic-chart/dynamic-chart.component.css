@@ -1,12 +1,14 @@
 .chart_container {
-    background-color: var(--dark);
-    color: white;
+    background-color: var(--wlight);
+    color: var(--wdark);
 }
 canvas{
-    color: var(--wlight);
+    color: var(--wdark);
     position: relative;
     height:40vh;
     width:80vw;
+    margin-top: 8vh;
+    
 }
 
 

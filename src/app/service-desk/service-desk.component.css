@@ -1,0 +1,36 @@
+.active_clients_icon{
+    color: #70f942;
+}
+.inaactive_clients_icon{
+    color: #2f34fb;
+}
+.defaults_clients_icon{
+    color: red;
+}
+
+[clients_actions_icon]{
+    color: grey;
+    margin-right: 10px;
+}
+
+[clients_actions_icon]:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+mat-list-item:hover{
+    background-color: #dddddd;
+}
+mat-list-item>[mat-line]:hover{
+    cursor: pointer;
+}
+[clientType]{
+    margin-top: 30px;
+    margin-left: 80%;
+    
+}
+
+[cards]{
+    margin: 20px;
+}
