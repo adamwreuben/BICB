@@ -12,3 +12,6 @@
   border-radius: 5px;
   justify-content: space-around;
 }
+mat-card{
+  margin: 30px;
+}
