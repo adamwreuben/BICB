@@ -7,6 +7,7 @@ import { TrasuryComponent } from './trasury/trasury.component';
 
 
 const routes: Routes = [
+
   { path: 'management', component: ManagementComponent},
   { path: 'operations', component: OperationsComponent},
   { path: 'service-desk', component: ServiceDeskComponent},
