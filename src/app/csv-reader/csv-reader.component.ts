@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { CSVRecord } from '.src/app/CSVModel';
+import { CSVRecord } from './CSVModel';
 
 @Component({
   selector: 'app-csv-reader',
