@@ -19,8 +19,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
  import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-
-
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -37,6 +37,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     ChartsModule,
     MatButtonModule,
     MatIconModule,
+    MatRadioModule,
     MatToolbarModule,
     MatSlideToggleModule,
     LayoutModule,
@@ -45,7 +46,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatSidenavModule,
     MatListModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
 
   ],
   providers: [],

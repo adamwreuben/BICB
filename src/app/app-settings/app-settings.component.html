@@ -1,11 +1,15 @@
 <mat-list>
   <mat-list-item>Notifications</mat-list-item>
   <mat-card cards>
+      <mat-list>
+  <mat-list-item>Do Not Disturb</mat-list-item>
+    <mat-checkbox [(ngModel)]="checked">Automatically disable notifications from:</mat-checkbox>
 
+
+      </mat-list>
   </mat-card>
   <mat-divider></mat-divider>
-  <mat-list-item>Themes</mat-list-item>
-  <mat-divider></mat-divider>
+  
   <mat-list-item>Languages & Region</mat-list-item>
   <mat-card cards>
       <mat-list>
@@ -35,11 +39,24 @@
   <mat-divider></mat-divider>
   <mat-list-item>Themes</mat-list-item>
   <mat-card cards>
-      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle value="bold">Bold</mat-button-toggle>
-        <mat-button-toggle value="italic">Italic</mat-button-toggle>
-        <mat-button-toggle value="underline">Underline</mat-button-toggle>
-      </mat-button-toggle-group>
+      <!-- <div toggleBtnContainer>
+            <div class="themeToggle lightTheme">Light</div>
+            <div class="themeToggle darkTheme">Dark</div>
+      </div>     -->
+      <mat-list role="list">
+        <mat-list-item role="listitem">
+            <div mat-line>Dark Theme</div>
+          <mat-slide-toggle></mat-slide-toggle> 
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <div mat-line>Light Theme</div>
+          <mat-slide-toggle></mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <div mat-line>High Contrast</div>
+          <mat-slide-toggle></mat-slide-toggle>
+        </mat-list-item>
+      </mat-list>
       <button mat-stroked-button color="primary" savebtn>Save</button>
   </mat-card>
   <mat-divider></mat-divider>

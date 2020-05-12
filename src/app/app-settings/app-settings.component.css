@@ -8,3 +8,33 @@ mat-form-field{
 [savebtn]{
    margin-left: 85%;
 }
+[toggleBtnContainer]{
+    height: 100px;
+    width: 90%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.themeToggle{
+    height: auto;
+    width: 45%;
+    border-radius: 5px;
+}
+.lightTheme{
+    background-color: var(--light);
+    border: 1px solid grey;
+}
+.darkTheme{
+    background-color: var(--dark);
+    color: white;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}

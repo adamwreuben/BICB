@@ -14,12 +14,20 @@ interface zone {
   styleUrls: ['./app-settings.component.css']
 })
 export class AppSettingsComponent implements OnInit {
+
+  //check boxes
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
+  // languages
   Languages: Language[] = [
     { value: 'Swahili', viewValue: 'Swahili' },
     { value: 'English', viewValue: 'English' },
     { value: 'Spanish', viewValue: 'spanish' }
   ];
   
+  // timezones
   Timezones: zone[] = [
     {
       value: 'EAT', viewValue: ` 15: 48,
