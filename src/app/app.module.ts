@@ -27,7 +27,7 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     DynamicChartComponent,
     LineChartComponent,
-    routingComponents
+    routingComponents,
   ],
   imports: [
     BrowserModule,
