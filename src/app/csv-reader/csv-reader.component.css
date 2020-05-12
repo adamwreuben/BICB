@@ -1,8 +1,12 @@
+[csvtable]{
+  width: 100%;
+  overflow:scroll;
+}
 table.minimalistBlack {
   border: 3px solid #000;
   width: 100%;
   text-align: left;
-  border-collapse: collapse
+  border-collapse: collapse;
 }
 
 table.minimalistBlack td,
