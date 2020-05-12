@@ -14,12 +14,8 @@ interface zone {
   styleUrls: ['./app-settings.component.css']
 })
 export class AppSettingsComponent implements OnInit {
-
-  //check boxes
-  checked = false;
-  indeterminate = false;
-  labelPosition: 'before' | 'after' = 'after';
-  disabled = false;
+  panelOpenState = false;
+  
   // languages
   Languages: Language[] = [
     { value: 'Swahili', viewValue: 'Swahili' },

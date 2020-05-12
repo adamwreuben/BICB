@@ -1,16 +1,29 @@
 <mat-list>
-  <mat-list-item>Notifications</mat-list-item>
+  <mat-list-item>
+    <mat-icon>notifications</mat-icon>
+    Notifications
+  </mat-list-item>
   <mat-card cards>
       <mat-list>
   <mat-list-item>Do Not Disturb</mat-list-item>
-    <mat-checkbox [(ngModel)]="checked">Automatically disable notifications from:</mat-checkbox>
+    <mat-checkbox >Automatically disable notifications from:</mat-checkbox>
+
+  <mat-list-item>Sound & Appearance</mat-list-item>
+    <mat-checkbox [(ngModel)]="checked">Show Notification on desktop</mat-checkbox>
+    <br>
+    <mat-checkbox [(ngModel)]="disabled">Use Custom Sound</mat-checkbox>
 
 
       </mat-list>
+      <button mat-stroked-button color="primary" savebtn>Save</button>
+
   </mat-card>
   <mat-divider></mat-divider>
   
-  <mat-list-item>Languages & Region</mat-list-item>
+  <mat-list-item>
+    <mat-icon>language</mat-icon>
+    Languages & Region
+  </mat-list-item>
   <mat-card cards>
       <mat-list>
           <mat-form-field>
@@ -37,7 +50,10 @@
       
   </mat-card>
   <mat-divider></mat-divider>
-  <mat-list-item>Themes</mat-list-item>
+  <mat-list-item>
+    <mat-icon>palette</mat-icon>
+    Themes
+  </mat-list-item>
   <mat-card cards>
       <!-- <div toggleBtnContainer>
             <div class="themeToggle lightTheme">Light</div>
@@ -57,9 +73,20 @@
           <mat-slide-toggle></mat-slide-toggle>
         </mat-list-item>
       </mat-list>
-      <button mat-stroked-button color="primary" savebtn>Save</button>
   </mat-card>
-  <mat-divider></mat-divider>
-  <mat-list-item>Advanced</mat-list-item>
+  <button mat-raised-button color="primary" savebtn>Save All Changes</button>
+
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Advanced
+      </mat-panel-title>
+      <mat-panel-description>
+        Experts Only
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Advanced settings goes here</p>
+  <button mat-raised-button color="primary" savebtn>Save All Changes</button>
+  </mat-expansion-panel>
 </mat-list>
 
