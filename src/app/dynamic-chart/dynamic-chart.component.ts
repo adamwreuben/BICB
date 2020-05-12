@@ -21,7 +21,7 @@ export class DynamicChartComponent implements OnInit {
   
 
   public barChartData: ChartDataSets[] = [
-    { data: [70, 100, 70, 80, 80], label: 'Targeted Active Clients' },
+    { data: [70, 70, 70, 80, 80], label: 'Targeted Active Clients' },
     { data: [61 , 62, 62, 52], label: 'Active Clients' }
   ];
 
