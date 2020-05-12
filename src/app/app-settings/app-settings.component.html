@@ -1,1 +1,48 @@
-<p>app-settings works!</p>
+<mat-list>
+  <mat-list-item>Notifications</mat-list-item>
+  <mat-card cards>
+
+  </mat-card>
+  <mat-divider></mat-divider>
+  <mat-list-item>Themes</mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>Languages & Region</mat-list-item>
+  <mat-card cards>
+      <mat-list>
+          <mat-form-field>
+            <mat-label>Language</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let Language of Languages" [value]="Language.value">
+                {{Language.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </mat-list>
+
+      <mat-list>
+          <mat-form-field>
+            <mat-label>Time Zone</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let zone of Timezones" [value]="zone.value">
+                {{zone.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </mat-list>
+      <button mat-stroked-button color="primary" savebtn>Save</button>
+      
+  </mat-card>
+  <mat-divider></mat-divider>
+  <mat-list-item>Themes</mat-list-item>
+  <mat-card cards>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold">Bold</mat-button-toggle>
+        <mat-button-toggle value="italic">Italic</mat-button-toggle>
+        <mat-button-toggle value="underline">Underline</mat-button-toggle>
+      </mat-button-toggle-group>
+      <button mat-stroked-button color="primary" savebtn>Save</button>
+  </mat-card>
+  <mat-divider></mat-divider>
+  <mat-list-item>Advanced</mat-list-item>
+</mat-list>
+

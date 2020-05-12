@@ -18,6 +18,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
  import { MatSelectModule } from '@angular/material/select';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 
@@ -40,6 +41,7 @@ import { MatCardModule } from '@angular/material/card';
     MatSlideToggleModule,
     LayoutModule,
     MatSelectModule,
+    MatButtonToggleModule,
     MatSidenavModule,
     MatListModule,
     MatTabsModule,

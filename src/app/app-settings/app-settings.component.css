@@ -1,0 +1,10 @@
+[cards]{
+    margin: 20px;
+}
+mat-form-field{
+    width: 90%;
+    margin-left: 5%;
+}
+[savebtn]{
+   margin-left: 85%;
+}
