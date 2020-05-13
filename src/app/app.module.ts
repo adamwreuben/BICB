@@ -22,7 +22,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { CsvReaderComponent } from './csv-reader/csv-reader.component';
 // import { HttpClientModule } from '@angular/common/http';
 
 
@@ -32,7 +31,6 @@ import { CsvReaderComponent } from './csv-reader/csv-reader.component';
     DynamicChartComponent,
     LineChartComponent,
     routingComponents,
-    CsvReaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,13 +45,13 @@ import { CsvReaderComponent } from './csv-reader/csv-reader.component';
     MatSlideToggleModule,
     LayoutModule,
     MatSelectModule,
+    // HttpClientModule,
     MatButtonToggleModule,
     MatSidenavModule,
     MatListModule,
     MatTabsModule,
     MatCardModule,
     MatCheckboxModule,
-    // HttpClientModule
 
   ],
   providers: [],
